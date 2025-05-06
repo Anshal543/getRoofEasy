@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    "prettier-plugin-organize-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "tailwindConfig": "./tailwind.config.js",
+  "importOrder": ["^[./]"],
+  "importOrderSortSpecifiers": true,
+  "semi": true,
+  "tabWidth": 2,
+  "bracketSpacing": true,
+  "arrowParens": "always"
+}
