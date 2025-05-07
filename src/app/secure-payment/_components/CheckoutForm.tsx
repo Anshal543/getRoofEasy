@@ -57,13 +57,13 @@ const StripePaymentForm = ({ userId }: { userId: number }) => {
       }
 
       if (result.setupIntent?.status === "succeeded") {
-        const paymentMethod = result.setupIntent.payment_method;
-        const updatedPaymentMethod = await api.post(
-          `api/users/update-payment-method/${userId}/`,
-          {
-            payment_method: paymentMethod,
-          },
-        );
+        // const paymentMethod = result.setupIntent.payment_method;
+        // const updatedPaymentMethod = await api.post(
+        //   `api/users/update-payment-method/${userId}/`,
+        //   {
+        //     payment_method: paymentMethod,
+        //   },
+        // );
         toast.success("Payment method added successfully!");
         setPaymentSuccess(true);
       } else {
